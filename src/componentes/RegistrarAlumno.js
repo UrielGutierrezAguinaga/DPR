@@ -6,6 +6,8 @@ import {useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 import {TitutuloSecciones,FormularioRegistroSecciones,Select,Input2, ContenedorBoton,FormularioRegistro} from '../elementos/ElementosDeFormulario'
 import imagen1 from '../imagenes/motasPantera4.png'
+import BotonAtras from '../elementos/BotonAtras';
+
 
 const ImagenMotas = styled.img`
     
@@ -25,6 +27,9 @@ const ImagenMotas = styled.img`
 
 `;
 const RegistrarAlumno = () => {
+    
+    const navigate = useNavigate();
+          
     return (  
         <>
         <Helmet>
@@ -36,6 +41,10 @@ const RegistrarAlumno = () => {
                   <Titulo>Registro de Alumno</Titulo>
                   </ContenedorHeader>
         </Header>
+           
+        <BotonAtras ruta="/registro-usuarios"/>
+
+
         <ImagenMotas src={imagen1} alt="MotasUam" />
         <FormularioRegistro>
 		<FormularioRegistroSecciones>
@@ -84,7 +93,7 @@ const RegistrarAlumno = () => {
 
 				
 	        <ContenedorBoton>
-	                <Boton as="button" primario type="submit">Registrar Alumno</Boton>
+	                <Boton as="button" primario type="submit" onClick={() => navigate("/inicio-empleado")}>Registrar Alumno</Boton>
 		</ContenedorBoton>
 	</FormularioRegistro>
   

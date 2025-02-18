@@ -64,6 +64,7 @@ const FormularioRegistro = styled.form`
   padding:5%;
   width:90%;
   margin-top: -5% ;
+  
 `;
 
 const FormularioRegistroSecciones = styled.form`
@@ -72,7 +73,9 @@ const FormularioRegistroSecciones = styled.form`
   border: 2px solid rgb(240, 130, 0); /* Corregido */
   border-radius: 10px;
   margin:2%
-  
+   z-index: 1; /* Asegura que esté por encima de la imagen */
+    background-color: white; /* Asegura visibilidad clara */
+    
 `;
 const Input2 = styled.input`
     padding: 1%;

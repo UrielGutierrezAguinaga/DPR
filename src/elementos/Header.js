@@ -63,4 +63,24 @@ const Parrafo = styled.p`
         font-size: 2rem; /* 32px */
     }
 `;
-export {Header, Titulo, ContenedorHeader, ContenedorBotones, Parrafo, Subtitulo};
+
+const Footer = styled.footer`
+margin-top: 3%;
+width:100%;
+height: 100%;
+background: rgb(0,0,0);
+`;
+
+const A = styled.a`
+margin:11.6%; 
+width:10%;
+height: 100%; 
+`;
+
+const IMG = styled.img` 
+width:10%;
+height: 100%; 
+`;
+
+
+export {Header, Titulo, ContenedorHeader, ContenedorBotones, Parrafo, Subtitulo, Footer, A, IMG};

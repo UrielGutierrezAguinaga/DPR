@@ -6,6 +6,8 @@ import {useNavigate} from 'react-router-dom';
 import styled from 'styled-components';
 import {TituloTextbox,Input3,TitutuloSecciones,FormularioRegistroSecciones,Select,Input2, ContenedorBoton,FormularioRegistro} from '../elementos/ElementosDeFormulario'
 import imagen1 from '../imagenes/motasPantera4.png'
+import BotonAtras from '../elementos/BotonAtras';
+
 
 const ImagenMotas = styled.img`
     
@@ -25,6 +27,7 @@ const ImagenMotas = styled.img`
 
 `;
 const RegistrarEmpleado = () => {
+        const navigate = useNavigate();
     return (  
         <>
         <Helmet>
@@ -37,6 +40,10 @@ const RegistrarEmpleado = () => {
                   </ContenedorHeader>
         </Header>
         <ImagenMotas src={imagen1} alt="MotasUam" />
+        
+        <BotonAtras ruta="/registro-usuarios"/>
+
+
         <FormularioRegistro>
 		<FormularioRegistroSecciones>
 	<TitutuloSecciones>Datos de Contacto</TitutuloSecciones>	
@@ -101,13 +108,12 @@ const RegistrarEmpleado = () => {
 
 				
 	        <ContenedorBoton>
-	                <Boton as="button" primario type="submit">Registrar Empleado</Boton>
+	                <Boton as="button" primario type="submit" onClick={() => navigate("/inicio-empleado")}>Registrar Empleado</Boton>
 		</ContenedorBoton>
 	</FormularioRegistro>
   
-      </>
-
-
+   
+        </>
     );
 }
  
