@@ -9,20 +9,30 @@ import IniciarSesion from './componentes/InicioSesion'
 import RegistroUsuarios from './componentes/RegistroUsuarios'
 import RegistrarAlumno from './componentes/RegistrarAlumno';
 import RegistrarEmpleado from './componentes/RegistrarEmpleado';
-import ContraseñaOlvidada from './componentes/ContraseñaOlvidada';
-import RecuperaContraseña from './componentes/RecuperaContraseña';
+import ContrasenaOlvidada from './componentes/ContrasenaOlvidada';
+import RecuperaContrasena from './componentes/RecuperaContrasena';
 import HomeAlumno from './componentes/HomeAlumno';
 import HomeCoordinador from './componentes/HomeCoordinador';
 import MaterialesDisponibles from './componentes/MaterialesDisponibles';
+import RegistrarMaterial from './componentes/RegistrarMaterial';
+
+import Prestamos from './componentes/Prestamos';
+import RegistrarPrestamo from './componentes/RegistrarPrestamo';
+
 import Historico from './componentes/Historico';
 import Reportes from './componentes/Reportes';
-import Avisos from './componentes/Avisos'
+import RegistrarReporte from './componentes/RegistrarReporte';
+
+import Avisos from './componentes/Avisos';
+import RegistrarAviso from './componentes/RegistrarAviso';
+
 import Titulos from './elementos/Titulos';
 import Permisos from './componentes/Permisos'
+import RegistrarPermiso from './componentes/RegistrarPermiso';
+
 import Perfil from './componentes/Perfil'
 import Usuarios from './componentes/GestionUsuarios'
-import {Footer, A, IMG} from './elementos/Header'
-import imguam from './imagenes/variacion5Cua.png'
+import {Footer, A, IMG} from './elementos/Header' 
 import Juno from './imagenes/Juno.png'
 import Cuajimalpa from './imagenes/Cuajimalpa.png'
 import DCNI from './imagenes/DCNI.png'
@@ -46,8 +56,8 @@ root.render(
         <Route path='/registro-usuarios' element={<RegistroUsuarios/>} />
         <Route path='/registro-alumno' element={<RegistrarAlumno/>} />
         <Route path='/registro-empleado' element={<RegistrarEmpleado/>} />
-        <Route path='/contraseña-olvidada' element={<ContraseñaOlvidada/>} />
-        <Route path='/contraseña-recupera' element={<RecuperaContraseña/>} />
+        <Route path='/contraseña-olvidada' element={<ContrasenaOlvidada/>} />
+        <Route path='/contraseña-recupera' element={<RecuperaContrasena/>} />
         <Route path='/inicio-alumno' element={<HomeAlumno/>} />
         <Route path='/inicio-empleado' element={<HomeCoordinador/>} />
         <Route path='/materiales' element={<MaterialesDisponibles/>} />
@@ -57,6 +67,13 @@ root.render(
         <Route path='/permisos' element={<Permisos/>} />
         <Route path='/perfil' element={<Perfil/>} />
         <Route path='/usuarios' element={<Usuarios/>} />
+        <Route path='/prestamos' element={<Prestamos/>} />
+        <Route path='/registro-prestamo' element={<RegistrarPrestamo/>} />
+        <Route path='/registro-material' element={<RegistrarMaterial/>} />
+        <Route path='/registro-reporte' element={<RegistrarReporte/>} />
+        <Route path='/registro-aviso' element={<RegistrarAviso/>} />
+        <Route path='/registro-permiso' element={<RegistrarPermiso/>} />
+        
         
         
         

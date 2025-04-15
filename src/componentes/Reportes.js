@@ -40,6 +40,9 @@ const ContenedorBotonRegistro = styled.div`
 
 
 const Reportes =() =>{
+
+   const navigate = useNavigate();
+
     return(
         <>
           <Helmet>
@@ -59,7 +62,7 @@ const Reportes =() =>{
       <ImagenLogo1 src={EliminarReporte} alt="LogoUam" />
       </ContenedorImagen>
       <ContenedorBotonRegistro>
-					<Boton as="button" primario type="submit"> Añadir Reporte</Boton>
+					<Boton as="button" primario type="submit" onClick={() => navigate("/registro-reporte")} > Añadir Reporte</Boton>
 					<Boton as="button" primario type="submit"> Eliminar Reporte</Boton>
 			</ContenedorBotonRegistro>
       <ContenedorImagen>

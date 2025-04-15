@@ -1,10 +1,9 @@
-import {Header, Titulo, ContenedorHeader, Subtitulo} from '../elementos/Header';
+import {Header, Titulo, ContenedorHeader} from '../elementos/Header';
 import Boton from '../elementos/Boton';
 import React, {useState} from 'react';
 import {Helmet} from 'react-helmet'; 
 import {useNavigate} from 'react-router-dom';
-import styled from 'styled-components';
-import pantera1 from '../imagenes/Pantera1.png'
+import styled from 'styled-components'; 
 import Perfil from '../imagenes/HuellaPantera.png'
 import Historico from'../imagenes/Historico.png'
 import Orden from '../imagenes/orden.png'
@@ -91,7 +90,7 @@ const HomeCoordinador =() =>{
       </ContenedorImagen>
       <ContenedorBotonRegistro>
           <Boton as="button" primario type="submit" onClick={() => navigate("/permisos")} >Permisos</Boton>
-          <Boton as="button" primario type="submit" onClick={() => navigate("/registro-usuarios")} >Prestamos</Boton>
+          <Boton as="button" primario type="submit" onClick={() => navigate("/prestamos")} >Prestamos</Boton>
       </ContenedorBotonRegistro>
       
       <ContenedorImagen>

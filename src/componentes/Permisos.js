@@ -40,6 +40,8 @@ const ContenedorBotonRegistro = styled.div`
 
 
 const Permisos =() =>{
+     const navigate = useNavigate();
+           
     return(
         <>
           <Helmet>
@@ -59,7 +61,7 @@ const Permisos =() =>{
       <ImagenLogo1 src={EliminarPermiso} alt="LogoUam" />
       </ContenedorImagen>
       <ContenedorBotonRegistro>
-					<Boton as="button" primario type="submit"> Añadir Permiso</Boton>
+					<Boton as="button" primario type="submit" onClick={() => navigate("/registro-permiso")}> Añadir Permiso</Boton>
 					<Boton as="button" primario type="submit"> Eliminar Permiso</Boton>
 			</ContenedorBotonRegistro>
       <ContenedorImagen>

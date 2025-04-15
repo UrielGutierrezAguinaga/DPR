@@ -38,7 +38,9 @@ const ContenedorBotonRegistro = styled.div`
 
 
 
-const MaterialesDisponibles =() =>{
+const Avisos =() =>{
+const navigate = useNavigate();
+      
     return(
         <>
           <Helmet>
@@ -58,7 +60,7 @@ const MaterialesDisponibles =() =>{
       <ImagenLogo1 src={EliminarAviso} alt="LogoUam" />
       </ContenedorImagen>
       <ContenedorBotonRegistro>
-					<Boton as="button" primario type="submit"> Añadir Aviso</Boton>
+					<Boton as="button" primario type="submit"  onClick={() => navigate("/registro-aviso")}> Añadir Aviso</Boton>
 					<Boton as="button" primario type="submit"> Eliminar Aviso</Boton>
 			</ContenedorBotonRegistro>
       <ContenedorImagen>
@@ -73,6 +75,6 @@ const MaterialesDisponibles =() =>{
 
 }
 
-export default MaterialesDisponibles;
+export default Avisos;
 
 

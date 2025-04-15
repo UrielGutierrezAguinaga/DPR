@@ -24,7 +24,7 @@ const ImagenMotas = styled.img`
         }
 
 `;
-const ContraseñaOlvidada = () => {
+const ContrasenaOlvidada = () => {
     const navigate = useNavigate();
 
     return (  
@@ -67,5 +67,5 @@ const ContraseñaOlvidada = () => {
     );
 }
  
-export default ContraseñaOlvidada
+export default ContrasenaOlvidada
 
